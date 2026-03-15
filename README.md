@@ -4,8 +4,6 @@
 
 ADB Commander Pro is a **web-based interface for controlling Android devices using ADB (Android Debug Bridge)**. It provides an easy-to-use dashboard to manage Android devices directly from a browser without using command-line tools.
 
----
-
 ## 🚀 Live Deployment
 
 Frontend (Web Interface)
@@ -14,7 +12,6 @@ https://adbcommander.onrender.com/
 Backend API (FastAPI Server)
 https://adb-commander-rqaq.onrender.com/
 
----
 
 ## 🛠 Technologies Used
 
@@ -23,7 +20,6 @@ https://adb-commander-rqaq.onrender.com/
 * Device Communication: ADB (Android Debug Bridge)
 * Deployment Platform: Render
 
----
 
 ## ✨ Features
 
@@ -57,8 +53,6 @@ Send input commands to the device.
 📸 Screenshot Tool
 Capture screenshots directly from the browser.
 
----
-
 ## 📡 Wireless ADB Setup
 
 ### Method 1 – TCP/IP Connection
@@ -90,7 +84,6 @@ Run backend
 
 uvicorn main:app --reload
 
----
 
 ## ⚠ Requirements
 
@@ -98,7 +91,6 @@ uvicorn main:app --reload
 * ADB installed (Android SDK Platform Tools)
 * Python environment for backend
 
----
 
 ## 👨‍💻 Author
 
