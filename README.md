@@ -95,4 +95,5 @@ uvicorn main:app --reload
 ## 👨‍💻 Author
 
 G V Sushanth
+
 GitHub: https://github.com/SUSHANTH1905
