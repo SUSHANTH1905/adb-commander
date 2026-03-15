@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0d1117; color: #e6edf3; overflow: hidden; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 5px 12px; border-radius: 6px; border: none; cursor: pointer;
+  font-size: 13px; font-weight: 600; font-family: inherit;
+  transition: background 0.15s, color 0.15s; outline: none;
+}
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-g { background: #21262d; color: #00ff88; }
+.btn-g:hover:not(:disabled) { background: #00ff88; color: #0d1117; }
+.btn-b { background: #21262d; color: #58a6ff; }
+.btn-b:hover:not(:disabled) { background: #58a6ff; color: #0d1117; }
+.btn-r { background: #21262d; color: #ff6b6b; }
+.btn-r:hover:not(:disabled) { background: #ff6b6b; color: #0d1117; }
+.btn-o { background: #21262d; color: #ffa657; }
+.btn-o:hover:not(:disabled) { background: #ffa657; color: #0d1117; }
+
+.inp {
+  background: #21262d; color: #fff; border: 1px solid #30363d;
+  border-radius: 6px; padding: 5px 10px; font-size: 13px;
+  font-family: 'Courier New', monospace; outline: none;
+}
+.inp:focus { border-color: #00ff88; }
+
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; }
+
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th { text-align: left; padding: 8px 12px; color: #58a6ff; font-weight: 600; background: #21262d; position: sticky; top: 0; z-index: 1; }
+.tbl td { padding: 6px 12px; border-bottom: 1px solid #30363d; }
+.tbl tr:hover td { background: #21262d; }
+.tbl tr.sel td { background: rgba(0,255,136,0.08); }
+
+.msg-ok  { background: rgba(0,255,136,0.08); color: #00ff88; border: 1px solid rgba(0,255,136,0.2); border-radius: 6px; padding: 8px 12px; font-size: 12px; font-family: monospace; }
+.msg-err { background: rgba(255,107,107,0.08); color: #ff6b6b; border: 1px solid rgba(255,107,107,0.2); border-radius: 6px; padding: 8px 12px; font-size: 12px; font-family: monospace; }
+
+.pill-in   { padding: 2px 7px; border-radius: 4px; font-size: 11px; background: rgba(0,255,136,0.12); color: #00ff88; }
+.pill-out  { padding: 2px 7px; border-radius: 4px; font-size: 11px; background: rgba(88,166,255,0.12); color: #58a6ff; }
+.pill-miss { padding: 2px 7px; border-radius: 4px; font-size: 11px; background: rgba(255,107,107,0.12); color: #ff6b6b; }
+
+.bub-in  { align-self: flex-start; background: #21262d; color: #e6edf3; border-radius: 16px 16px 16px 4px; padding: 8px 12px; max-width: 70%; font-size: 13px; word-break: break-word; }
+.bub-out { align-self: flex-end;   background: rgba(88,166,255,0.15); color: #e6edf3; border: 1px solid rgba(88,166,255,0.25); border-radius: 16px 16px 4px 16px; padding: 8px 12px; max-width: 70%; font-size: 13px; word-break: break-word; }
+
+.term { background: #0a0e13; font-family: 'Courier New', monospace; font-size: 12px; color: #00ff88; padding: 12px; border-radius: 6px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { display: inline-block; animation: spin 1s linear infinite; }
